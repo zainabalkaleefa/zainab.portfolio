@@ -1,3 +1,4 @@
+@import url('https://blog.codemy.net/content/images/2019/01/front-end.jpg');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1000&display=swap');
 body{
     padding: 0;
@@ -101,6 +102,87 @@ opacity: 0.7;
 
 /* service section */
 
+.skill{
+flex-direction: column;
+text-align: center;
+max-width: 1500px;
+margin: 0 auto;
+padding: 5% 10%;
+}
+.sectionTitle{
+    font-size: 2rem;
+    font-weight: 300;
+    color:#b32c49;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.skillTop p{
+font-size: 1rem;
+margin-top: 5px;
+line-height: 2.5rem;
+font-weight: 300;
+letter-spacing: 0.05rem;
+}
+.skillBottom{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+color: white;
+}
+.skillBottom h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
+.skillBottom p{
+    padding-left: 60px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 100;
+    line-height: 1rem;
+    margin-top: 5px;
+}
+.skillBottom h2 img{
+   height: 35px;
+   width: 35px;
+}
+.skillItem{
+    flex-basis: 65%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url('https://blog.codemy.net/content/images/2019/01/front-end.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1; 
+}
+
+.skillItem::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+   background-image: linear-gradient(60deg, black 70%, rgb(100, 98, 98) 100%);
+    opacity: 0.8;
+    z-index: -1;
+  
+}
 
 
 @keyframes helloZainab {
