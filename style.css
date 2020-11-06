@@ -1,6 +1,6 @@
 @import url('https://blog.codemy.net/content/images/2019/01/front-end.jpg');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1000&display=swap');
-@import url('https://images.unsplash.com/photo-1497531551184-06b252e1bee1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80')
+@import url('https://images.unsplash.com/photo-1497531551184-06b252e1bee1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');
 body{
     padding: 0;
     margin: 0;
@@ -222,7 +222,7 @@ color: white;
     height: 100%;
     width: 100%;
    background-image: linear-gradient(60deg, black 70%, rgb(100, 98, 98) 100%);
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: -1;
   
 }
