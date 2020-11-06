@@ -214,6 +214,7 @@ color: white;
     margin: 10px 5%;
     position: relative;
     z-index: 1; 
+    transition: .3s ease transform;
 }
 
 .projectItem p {
@@ -248,6 +249,10 @@ color: white;
   
 }
 
+.projectItem:hover{
+    transform: scale(1.1);
+}
+
 .projectItem2{
     border-radius: 50px;
     flex-basis: 40%;
@@ -263,6 +268,7 @@ color: white;
     margin: 10px 5%;
     position: relative;
     z-index: 1; 
+    transition: .3s ease transform;
 }
 
 .projectItem2 p {
@@ -296,6 +302,9 @@ color: white;
     z-index: -1;
   
 }
+.projectItem2:hover{
+    transform: scale(1.1);
+}
 
 .projectItem3{
     border-radius: 50px;
@@ -312,6 +321,7 @@ color: white;
     margin: 10px 5%;
     position: relative;
     z-index: 1; 
+    transition: .3s ease transform;
 }
 
 .projectItem3 p {
@@ -345,6 +355,9 @@ color: white;
     z-index: -1;
   
 }
+.projectItem3:hover{
+    transform: scale(1.1);
+}
 
 .projectItem4{
     border-radius: 50px;
@@ -361,6 +374,7 @@ color: white;
     margin: 10px 5%;
     position: relative;
     z-index: 1; 
+    transition: .3s ease transform;
 }
 
 .projectItem4 p {
@@ -392,7 +406,9 @@ color: white;
    background-image: linear-gradient(60deg, black 70%, rgb(100, 98, 98) 100%);
     opacity: 0.6;
     z-index: -1;
-  
+  }
+  .projectItem4:hover{
+    transform: scale(1.1);
 }
 @keyframes helloZainab {
     50% {
