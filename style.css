@@ -1,5 +1,6 @@
 @import url('https://blog.codemy.net/content/images/2019/01/front-end.jpg');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1000&display=swap');
+@import url('https://images.unsplash.com/photo-1497531551184-06b252e1bee1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80')
 body{
     padding: 0;
     margin: 0;
@@ -127,6 +128,7 @@ font-weight: 300;
 letter-spacing: 0.05rem;
 }
 .skillBottom{
+
 display: flex;
 align-items: center;
 justify-content: center;
@@ -155,13 +157,13 @@ color: white;
    width: 35px;
 }
 .skillItem{
+    border-radius: 50px;
     flex-basis: 65%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
-    border-radius: 10px;
     background-image: url('https://blog.codemy.net/content/images/2019/01/front-end.jpg');
     background-size: cover;
     height: 100%;
@@ -172,6 +174,7 @@ color: white;
 }
 
 .skillItem::after{
+    border-radius: 50px;
     content: '';
     position: absolute;
     left: 0;
@@ -184,6 +187,45 @@ color: white;
   
 }
 
+/* Project Section*/ 
+
+.projects{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 5% 10%;
+}
+.projectItem{
+    border-radius: 50px;
+    flex-basis: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-image: url('https://images.unsplash.com/photo-1497531551184-06b252e1bee1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80');
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1; 
+}
+
+.projectItem::after{
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+   background-image: linear-gradient(60deg, black 70%, rgb(100, 98, 98) 100%);
+    opacity: 0.5;
+    z-index: -1;
+  
+}
 
 @keyframes helloZainab {
     50% {
