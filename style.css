@@ -468,8 +468,8 @@ opacity: 0.7;
 
 .flip-card {
     background-color: transparent;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 
   }
@@ -521,7 +521,7 @@ opacity: 0.7;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.2rem;
-    margin-top: -220px;
+    margin-top: -270px;
     margin-left: 100px;
    
   }
@@ -529,17 +529,33 @@ opacity: 0.7;
     font-size: 1rem;
     letter-spacing: 0.2rem;
     font-weight: 400;
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .centered h4{
     font-size: 0.7rem;
     /* transform: skewY(-20deg); */
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.4rem;
     font-weight: 600;
-    margin-left: 200px;
-    margin-top: 50px;
+    margin-left: 250px;
+    margin-top: 70px;
     color: #b32c49;
+    text-shadow:
+    1px 1px 0px #b32c49,
+    -3px -0 25px #b32c49,
+    3px 0px 3px white,
+    0px 0px 15px white,
+    15px 10px 10px black,
+    0 0 40px #b32c49,
+    0 0 40px#b32c49,
+    0 0 60px #b32c49,
+    0 0 80px white,
+    0 0 80px white,
+    0 0 100px white,
+    0 0 150px  white;
+    
   }
+  
+
   
   /* Style the back side */
   .flip-card-back {
