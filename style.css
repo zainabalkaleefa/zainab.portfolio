@@ -464,7 +464,73 @@ letter-spacing: .05rem;
 background-color: rgb(214, 119, 151);
 opacity: 0.7;
 }
+/* Contact section */
 
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #b32c49;
+    color: black;
+    box-shadow: 10px 10px 5px grey;
+    
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #b32c49;
+    color: white;
+    transform: rotateY(180deg);
+    box-shadow: 10px 10px 5px grey;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-bottom: 40px;
+    margin-top: 60px;
+  }
+
+  .cardPicture img{
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    border: solid 1px  #b32c49;
+    flex-direction: column-reverse;
+   
+  }
+
+
+  
 @keyframes helloZainab {
     50% {
       width:100%;
