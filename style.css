@@ -654,11 +654,12 @@ opacity: 0.7;
    .navBar {
        display: flex;
        align-items: center;
+       /* margin-right: 1000px; */
        justify-content: space-between;
        width: 100%;
        height: 100%;
        max-width: 1300px;
-       padding: 0 110px;
+       padding: 0 10px;
     
    }
    .navList ul{
@@ -675,38 +676,44 @@ opacity: 0.7;
        align-items: center;
        z-index: 1;
        overflow-x: hidden;
+       transition: 0.4s ease left;
    }
    .navList ul.active{
-left: 0;
-
-
+    left: 0;
    }
-   .navList a{
+   .navList ul a{
        font-size: 2.5rem;
        font-weight: 500;
        letter-spacing: 0.2rem;
        color: white;
        text-decoration: none;
        text-transform: uppercase;
-       padding: 20px;
+       padding-top: 20px;
        display: block;
+
       
    }
-   .navList a::after{
+   .navList ul a::after{
        content: attr(data-after);
        position: absolute;
        top: 50%;
        left: 50%;
        transform: translate(-50%,-50%) scale(0);
-       color: #b32c49;
-       font-size: 7rem;
+       color: rgba(240,248,255,0.05);
+       font-size: 10rem;
        letter-spacing: 50px;
        z-index: -1;
+       transition: .3s ease letter-spacing;
    }
    .navList ul li:hover a::after{
     transform: translate(-50%,-50%) scale(1);
     letter-spacing: initial;
-    transition: .3s ease letter-spacing;
+
+   }
+   .navList ul li:hover a{
+    color: #b32c49;  
+    
+
    }
 .hamburger{
 z-index: 100;
@@ -720,8 +727,22 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
+transform: scale(0.8);
+margin-right: 20px;
 }
+.hamburger:after{
+position: absolute;
+content: '';
+height:100% ;
+width:100%;
+border-radius: 50%;
+border: 3px solid white;
+animation: hamburgerPuls 1s ease infinite;
 
+
+
+
+}
 .hamburger .bar{
 height: 2px;
 width: 30px;
@@ -729,7 +750,8 @@ position: relative;
 background-color: white;
 z-index: -1;
 }
-.hamburger .bar::after, .hamburger .bar::before{
+.hamburger .bar::after,
+ .hamburger .bar::before{
     content: '';
     position: absolute;
     height: 100%;
@@ -771,6 +793,15 @@ z-index: -1;
     color: #b32c49;
     }
   }
-
+@keyframes hamburgerPuls{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
 
   
