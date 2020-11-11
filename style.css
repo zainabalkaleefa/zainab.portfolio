@@ -733,12 +733,21 @@ z-index: -1;
     transition: 0.3s ease;
     transition-property: top, bottom;
     }
-    .bar::after{
+    .hamburger .bar::after{
        top: 8px;
     }
-    .bar::before {
+    .hamburger .bar::before {
         bottom: 8px;
      }
+     .hamburger.active .bar::after{
+        top:0px;
+    }
+    .hamburger.active .bar::before{
+        bottom:0px;
+     }
+    
+
+
 @keyframes helloZainab {
     50% {
       width:100%;
