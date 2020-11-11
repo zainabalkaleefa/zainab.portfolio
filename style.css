@@ -659,6 +659,7 @@ opacity: 0.7;
        height: 100%;
        max-width: 1300px;
        padding: 0 110px;
+    
    }
    .navList ul{
        list-style: none;
@@ -667,7 +668,7 @@ opacity: 0.7;
        width: 100vw;
        height: 100vh;
        top: 0;
-       left: 0;
+       left:100%;
        display: flex;
        justify-content: center;
        flex-direction: column;
@@ -675,7 +676,11 @@ opacity: 0.7;
        z-index: 1;
        overflow-x: hidden;
    }
+   .navList ul.active{
+left: 0;
 
+
+   }
    .navList a{
        font-size: 2.5rem;
        font-weight: 500;
@@ -685,6 +690,7 @@ opacity: 0.7;
        text-transform: uppercase;
        padding: 20px;
        display: block;
+      
    }
    .navList a::after{
        content: attr(data-after);
@@ -716,14 +722,14 @@ justify-content: center;
 cursor: pointer;
 }
 
-.bar{
+.hamburger .bar{
 height: 2px;
 width: 30px;
 position: relative;
 background-color: white;
 z-index: -1;
 }
-.bar::after, .bar::before{
+.hamburger .bar::after, .hamburger .bar::before{
     content: '';
     position: absolute;
     height: 100%;
@@ -740,10 +746,10 @@ z-index: -1;
         bottom: 8px;
      }
      .hamburger.active .bar::after{
-        top:0px;
+        top:0;
     }
     .hamburger.active .bar::before{
-        bottom:0px;
+        bottom:0;
      }
     
 

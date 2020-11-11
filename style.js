@@ -4,4 +4,6 @@ const header = document.querySelector('.header .container');
 
 hamburger.addEventListener('click',()=>{
     hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
 });
+
