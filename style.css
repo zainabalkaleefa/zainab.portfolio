@@ -9,11 +9,13 @@ body{
     margin: 0;
     box-sizing: border-box;
     background-color: rgba(236, 187, 205, 0.719);
+    
 
 }
 html{
     font-size:20px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -659,7 +661,8 @@ opacity: 0.7;
        width: 100%;
        height: 100%;
        max-width: 1300px;
-       padding: 0 10px;
+       padding: 0px 10px;
+       margin-left: -10rem;
     
    }
    .navList ul{
@@ -670,6 +673,7 @@ opacity: 0.7;
        height: 100vh;
        top: 0;
        left:100%;
+ 
        display: flex;
        justify-content: center;
        flex-direction: column;
@@ -802,6 +806,39 @@ z-index: -1;
         opacity: 0;
         transform: scale(1.4);
     }
+}
+
+/* media Query for Desktop*/
+@media only screen and (min-width:1200px){
+    .hamburger{
+        display: none;
+    }
+    
+    .navList ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+        padding-left: 10rem; 
+   
+    }
+    
+    .navList ul li{
+        display: inline-block;
+    
+    }
+    
+    .navList ul li a{
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        padding-left: 50px;
+    }
+    
+    .navList ul li a:after{
+        display: none;
+    }
+    
 }
 
   
